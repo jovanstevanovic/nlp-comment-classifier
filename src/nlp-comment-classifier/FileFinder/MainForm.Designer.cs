@@ -151,6 +151,7 @@
 			this.Controls.Add(this.gbFindFiles);
 			this.Controls.Add(this.gbPathChoosing);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.MinimizeBox = false;
 			this.Name = "MainForm";
 			this.ShowIcon = false;
 			this.Text = "File Finder";

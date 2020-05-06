@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace FileFinder
+namespace SQLCommentExtractor
 {
 	public static class Program
 	{
