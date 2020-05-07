@@ -44,7 +44,7 @@ namespace SQLCommentExtractor
 							switch (c)
 							{
 								case '-': state = Hyphen; break;
-								case '#': state = SinglelineComment; break;
+								case '#': state = SinglelineComment; cln = ln; break;
 								case '/': state = Slash; break;
 								case '\'': state = StringSingle; break;
 								case '"': state = StringDouble; break;

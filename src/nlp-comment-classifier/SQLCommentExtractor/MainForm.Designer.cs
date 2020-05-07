@@ -33,15 +33,15 @@
 			this.btnChoose = new System.Windows.Forms.Button();
 			this.FBDPath = new System.Windows.Forms.FolderBrowserDialog();
 			this.gbOutput = new System.Windows.Forms.GroupBox();
-			this.btnChooseOutput = new System.Windows.Forms.Button();
-			this.lblNaturalLanguage = new System.Windows.Forms.Label();
-			this.tbNaturalLanguage = new System.Windows.Forms.TextBox();
-			this.tbProgrammingLanguage = new System.Windows.Forms.TextBox();
-			this.lblProgrammingLanguage = new System.Windows.Forms.Label();
+			this.btnDeploy = new System.Windows.Forms.Button();
+			this.tbOutputPath = new System.Windows.Forms.TextBox();
 			this.tbRepoID = new System.Windows.Forms.TextBox();
 			this.lblRepoID = new System.Windows.Forms.Label();
-			this.tbOutputPath = new System.Windows.Forms.TextBox();
-			this.btnDeploy = new System.Windows.Forms.Button();
+			this.tbProgrammingLanguage = new System.Windows.Forms.TextBox();
+			this.lblProgrammingLanguage = new System.Windows.Forms.Label();
+			this.tbNaturalLanguage = new System.Windows.Forms.TextBox();
+			this.lblNaturalLanguage = new System.Windows.Forms.Label();
+			this.btnChooseOutput = new System.Windows.Forms.Button();
 			this.FBDOutput = new System.Windows.Forms.FolderBrowserDialog();
 			this.gbPathChoosing.SuspendLayout();
 			this.gbOutput.SuspendLayout();
@@ -101,32 +101,41 @@
 			this.gbOutput.TabStop = false;
 			this.gbOutput.Text = "Output";
 			// 
-			// btnChooseOutput
+			// btnDeploy
 			// 
-			this.btnChooseOutput.Location = new System.Drawing.Point(6, 105);
-			this.btnChooseOutput.Name = "btnChooseOutput";
-			this.btnChooseOutput.Size = new System.Drawing.Size(380, 23);
-			this.btnChooseOutput.TabIndex = 0;
-			this.btnChooseOutput.Text = "Choose output";
-			this.btnChooseOutput.UseVisualStyleBackColor = true;
-			this.btnChooseOutput.Click += new System.EventHandler(this.btnChooseOutput_Click);
+			this.btnDeploy.Location = new System.Drawing.Point(6, 193);
+			this.btnDeploy.Name = "btnDeploy";
+			this.btnDeploy.Size = new System.Drawing.Size(380, 23);
+			this.btnDeploy.TabIndex = 7;
+			this.btnDeploy.Text = "Deploy";
+			this.btnDeploy.UseVisualStyleBackColor = true;
+			this.btnDeploy.Click += new System.EventHandler(this.btnDeploy_Click);
 			// 
-			// lblNaturalLanguage
+			// tbOutputPath
 			// 
-			this.lblNaturalLanguage.AutoSize = true;
-			this.lblNaturalLanguage.Location = new System.Drawing.Point(6, 26);
-			this.lblNaturalLanguage.Name = "lblNaturalLanguage";
-			this.lblNaturalLanguage.Size = new System.Drawing.Size(95, 13);
-			this.lblNaturalLanguage.TabIndex = 1;
-			this.lblNaturalLanguage.Text = "Natural Language:";
+			this.tbOutputPath.Location = new System.Drawing.Point(6, 134);
+			this.tbOutputPath.Multiline = true;
+			this.tbOutputPath.Name = "tbOutputPath";
+			this.tbOutputPath.ReadOnly = true;
+			this.tbOutputPath.Size = new System.Drawing.Size(380, 53);
+			this.tbOutputPath.TabIndex = 2;
+			this.tbOutputPath.Text = "Output Path: <None>";
 			// 
-			// tbNaturalLanguage
+			// tbRepoID
 			// 
-			this.tbNaturalLanguage.Location = new System.Drawing.Point(142, 23);
-			this.tbNaturalLanguage.Name = "tbNaturalLanguage";
-			this.tbNaturalLanguage.Size = new System.Drawing.Size(244, 20);
-			this.tbNaturalLanguage.TabIndex = 2;
-			this.tbNaturalLanguage.Text = "EN";
+			this.tbRepoID.Location = new System.Drawing.Point(142, 75);
+			this.tbRepoID.Name = "tbRepoID";
+			this.tbRepoID.Size = new System.Drawing.Size(244, 20);
+			this.tbRepoID.TabIndex = 6;
+			// 
+			// lblRepoID
+			// 
+			this.lblRepoID.AutoSize = true;
+			this.lblRepoID.Location = new System.Drawing.Point(6, 78);
+			this.lblRepoID.Name = "lblRepoID";
+			this.lblRepoID.Size = new System.Drawing.Size(50, 13);
+			this.lblRepoID.TabIndex = 5;
+			this.lblRepoID.Text = "Repo ID:";
 			// 
 			// tbProgrammingLanguage
 			// 
@@ -145,41 +154,32 @@
 			this.lblProgrammingLanguage.TabIndex = 3;
 			this.lblProgrammingLanguage.Text = "Programming Language:";
 			// 
-			// tbRepoID
+			// tbNaturalLanguage
 			// 
-			this.tbRepoID.Location = new System.Drawing.Point(142, 75);
-			this.tbRepoID.Name = "tbRepoID";
-			this.tbRepoID.Size = new System.Drawing.Size(244, 20);
-			this.tbRepoID.TabIndex = 6;
+			this.tbNaturalLanguage.Location = new System.Drawing.Point(142, 23);
+			this.tbNaturalLanguage.Name = "tbNaturalLanguage";
+			this.tbNaturalLanguage.Size = new System.Drawing.Size(244, 20);
+			this.tbNaturalLanguage.TabIndex = 2;
+			this.tbNaturalLanguage.Text = "EN";
 			// 
-			// lblRepoID
+			// lblNaturalLanguage
 			// 
-			this.lblRepoID.AutoSize = true;
-			this.lblRepoID.Location = new System.Drawing.Point(6, 78);
-			this.lblRepoID.Name = "lblRepoID";
-			this.lblRepoID.Size = new System.Drawing.Size(50, 13);
-			this.lblRepoID.TabIndex = 5;
-			this.lblRepoID.Text = "Repo ID:";
+			this.lblNaturalLanguage.AutoSize = true;
+			this.lblNaturalLanguage.Location = new System.Drawing.Point(6, 26);
+			this.lblNaturalLanguage.Name = "lblNaturalLanguage";
+			this.lblNaturalLanguage.Size = new System.Drawing.Size(95, 13);
+			this.lblNaturalLanguage.TabIndex = 1;
+			this.lblNaturalLanguage.Text = "Natural Language:";
 			// 
-			// tbOutputPath
+			// btnChooseOutput
 			// 
-			this.tbOutputPath.Location = new System.Drawing.Point(6, 134);
-			this.tbOutputPath.Multiline = true;
-			this.tbOutputPath.Name = "tbOutputPath";
-			this.tbOutputPath.ReadOnly = true;
-			this.tbOutputPath.Size = new System.Drawing.Size(380, 53);
-			this.tbOutputPath.TabIndex = 2;
-			this.tbOutputPath.Text = "Output Path: <None>";
-			// 
-			// btnDeploy
-			// 
-			this.btnDeploy.Location = new System.Drawing.Point(6, 193);
-			this.btnDeploy.Name = "btnDeploy";
-			this.btnDeploy.Size = new System.Drawing.Size(380, 23);
-			this.btnDeploy.TabIndex = 7;
-			this.btnDeploy.Text = "Deploy";
-			this.btnDeploy.UseVisualStyleBackColor = true;
-			this.btnDeploy.Click += new System.EventHandler(this.btnDeploy_Click);
+			this.btnChooseOutput.Location = new System.Drawing.Point(6, 105);
+			this.btnChooseOutput.Name = "btnChooseOutput";
+			this.btnChooseOutput.Size = new System.Drawing.Size(380, 23);
+			this.btnChooseOutput.TabIndex = 0;
+			this.btnChooseOutput.Text = "Choose output";
+			this.btnChooseOutput.UseVisualStyleBackColor = true;
+			this.btnChooseOutput.Click += new System.EventHandler(this.btnChooseOutput_Click);
 			// 
 			// FBDOutput
 			// 
@@ -193,7 +193,7 @@
 			this.Controls.Add(this.gbOutput);
 			this.Controls.Add(this.gbPathChoosing);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.MinimizeBox = false;
+			this.MaximizeBox = false;
 			this.Name = "MainForm";
 			this.ShowIcon = false;
 			this.Text = "SQL Comment Extractor";
