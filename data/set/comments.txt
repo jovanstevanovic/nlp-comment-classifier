@@ -395,239 +395,99 @@ EN	SQL	alibaba/AliSQL	storage/ndb/test/crund/tws/schema.sql	alibaba/AliSQL/stora
 EN	SQL	alibaba/AliSQL	storage/ndb/test/crund/tws/schema.sql	alibaba/AliSQL/storage/ndb/test/crund/tws/schema.sql/45	        UNIQUE INDEX c7_UNIQUE (c7 ASC),	Code
 EN	SQL	alibaba/AliSQL	storage/ndb/test/crund/tws/schema.sql	alibaba/AliSQL/storage/ndb/test/crund/tws/schema.sql/46	        UNIQUE INDEX c8_UNIQUE (c8 ASC)	Code
 EN	SQL	alibaba/AliSQL	storage/ndb/tools/ndb_dist_priv.sql	alibaba/AliSQL/storage/ndb/tools/ndb_dist_priv.sql/1	 Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.\n\n This program is free software; you can redistribute it and/or modify\n it under the terms of the GNU General Public License as published by\n the Free Software Foundation; version 2 of the License.\n\n This program is distributed in the hope that it will be useful,\n but WITHOUT ANY WARRANTY; without even the implied warranty of\n MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n GNU General Public License for more details.\n\n You should have received a copy of the GNU General Public License\n along with this program; if not, write to the Free Software\n Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA	General
-EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/1	 name: GetAuthor :one
-EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/5	 name: ListAuthors :many
-EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/9	 name: CreateAuthor :one
-EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/17	 name: DeleteAuthor :exec
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/1	 name: GetAuthor :one 
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/5	 name: GetBook :one 
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/9	 name: DeleteBook :exec 
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/13	 name: BooksByTitleYear :many 
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/17	 name: CreateAuthor :exec 
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/20	 name: CreateBook :exec 
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/38	 name: UpdateBook :exec 
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/43	 name: UpdateBookISBN :exec 
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/48	 name: DeleteAuthorBeforeYear :exec 
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/schema.sql	kyleconroy/sqlc/examples/booktest/mysql/schema.sql/4	 DROP FUNCTION IF EXISTS say_hello;
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/schema.sql	kyleconroy/sqlc/examples/booktest/mysql/schema.sql/23	 CONSTRAINT FOREIGN KEY (author_id) REFERENCES authors(author_id)
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/schema.sql	kyleconroy/sqlc/examples/booktest/mysql/schema.sql/28	\nCREATE FUNCTION say_hello(s text) RETURNS text\n  DETERMINISTIC\n  RETURN CONCAT('hello ', s);\n
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/1	 name: GetAuthor :one
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/5	 name: GetBook :one
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/9	 name: DeleteBook :exec
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/13	 name: BooksByTitleYear :many
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/17	 name: BooksByTags :many
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/28	 name: CreateAuthor :one
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/32	 name: CreateBook :one
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/52	 name: UpdateBook :exec
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/57	 name: UpdateBookISBN :exec
-EN	SQL	kyleconroy/sqlc	examples/jets/query-building.sql	kyleconroy/sqlc/examples/jets/query-building.sql/1	 name: CountPilots :one
-EN	SQL	kyleconroy/sqlc	examples/jets/query-building.sql	kyleconroy/sqlc/examples/jets/query-building.sql/4	 name: ListPilots :many
-EN	SQL	kyleconroy/sqlc	examples/jets/query-building.sql	kyleconroy/sqlc/examples/jets/query-building.sql/7	 name: DeletePilot :exec
-EN	SQL	kyleconroy/sqlc	examples/jets/schema.sql	kyleconroy/sqlc/examples/jets/schema.sql/26	 Join table
-EN	SQL	kyleconroy/sqlc	examples/jets/schema.sql	kyleconroy/sqlc/examples/jets/schema.sql/32	 Composite primary key
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/1	 name: GetAuthor :one
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/5	 name: ListAuthors :many
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/9	 name: CreateAuthor :one
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/17	 name: DeleteAuthor :exec
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/1	 name: GetAuthor :one
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/5	 name: GetBook :one
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/9	 name: DeleteBook :exec
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/13	 name: BooksByTitleYear :many
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/17	 name: BooksByTags :many
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/28	 name: CreateAuthor :one
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/32	 name: CreateBook :one
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/52	 name: UpdateBook :exec
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/57	 name: UpdateBookISBN :exec
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/query-building.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/query-building.sql/1	 name: CountPilots :one
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/query-building.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/query-building.sql/4	 name: ListPilots :many
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/query-building.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/query-building.sql/7	 name: DeletePilot :exec
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/schema.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/schema.sql/26	 Join table
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/schema.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/schema.sql/32	 Composite primary key
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/1	 name: ListCities :many
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/6	 name: GetCity :one
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/11	 name: CreateCity :one
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/12	 Create a new city. The slug must be unique.
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/13	 This is the second line of the comment
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/14	 This is the third line
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/23	 name: UpdateCityName :exec
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/venue.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/venue.sql/1	 name: ListVenues :many
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/venue.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/venue.sql/7	 name: DeleteVenue :exec
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/venue.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/venue.sql/11	 name: GetVenue :one
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/venue.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/venue.sql/16	 name: CreateVenue :one
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/venue.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/venue.sql/37	 name: UpdateVenueName :one
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/venue.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/venue.sql/43	 name: VenueCountByCity :many
-EN	SQL	kyleconroy/sqlc	examples/ondeck/query/city.sql	kyleconroy/sqlc/examples/ondeck/query/city.sql/1	 name: ListCities :many
-EN	SQL	kyleconroy/sqlc	examples/ondeck/query/city.sql	kyleconroy/sqlc/examples/ondeck/query/city.sql/6	 name: GetCity :one
-EN	SQL	kyleconroy/sqlc	examples/ondeck/query/city.sql	kyleconroy/sqlc/examples/ondeck/query/city.sql/11	 name: CreateCity :one
-EN	SQL	kyleconroy/sqlc	examples/ondeck/query/city.sql	kyleconroy/sqlc/examples/ondeck/query/city.sql/12	 Create a new city. The slug must be unique.
-EN	SQL	kyleconroy/sqlc	examples/ondeck/query/city.sql	kyleconroy/sqlc/examples/ondeck/query/city.sql/13	 This is the second line of the comment
-EN	SQL	kyleconroy/sqlc	examples/ondeck/query/city.sql	kyleconroy/sqlc/examples/ondeck/query/city.sql/14	 This is the third line
-EN	SQL	kyleconroy/sqlc	examples/ondeck/query/city.sql	kyleconroy/sqlc/examples/ondeck/query/city.sql/23	 name: UpdateCityName :exec
-EN	SQL	kyleconroy/sqlc	examples/ondeck/query/venue.sql	kyleconroy/sqlc/examples/ondeck/query/venue.sql/1	 name: ListVenues :many
-EN	SQL	kyleconroy/sqlc	examples/ondeck/query/venue.sql	kyleconroy/sqlc/examples/ondeck/query/venue.sql/7	 name: DeleteVenue :exec
-EN	SQL	kyleconroy/sqlc	examples/ondeck/query/venue.sql	kyleconroy/sqlc/examples/ondeck/query/venue.sql/11	 name: GetVenue :one
-EN	SQL	kyleconroy/sqlc	examples/ondeck/query/venue.sql	kyleconroy/sqlc/examples/ondeck/query/venue.sql/16	 name: CreateVenue :one
-EN	SQL	kyleconroy/sqlc	examples/ondeck/query/venue.sql	kyleconroy/sqlc/examples/ondeck/query/venue.sql/37	 name: UpdateVenueName :one
-EN	SQL	kyleconroy/sqlc	examples/ondeck/query/venue.sql	kyleconroy/sqlc/examples/ondeck/query/venue.sql/43	 name: VenueCountByCity :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/alias/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/alias/query.sql/4	 name: Alias :exec
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/any/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/any/query.sql/3	 name: Any :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/as/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/as/query.sql/3	 name: As :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/case_stmt_bool/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/case_stmt_bool/query.sql/3	 name: CaseStatementBoolean :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/cast_coalesce/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/cast_coalesce/query.sql/3	 name: CastCoalesce :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/coalesce/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/coalesce/query.sql/3	 name: Coalesce :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/column_as/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/column_as/query.sql/3	 name: ColumnAs :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/1	 Comparison Functions and Operators
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/2	 https://www.postgresql.org/docs/current/functions-comparison.html
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/6	 name: GreaterThan :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/9	 name: LessThan :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/12	 name: GreaterThanOrEqual :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/15	 name: LessThanOrEqual :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/18	 name: NotEqual :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/21	 name: AlsoNotEqual :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/24	 name: Equal :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/composite_type/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/composite_type/query.sql/18	 name: ListPaths :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/cte_count/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/cte_count/query.sql/3	 name: CTECount :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/cte_filter/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/cte_filter/query.sql/3	 name: CTEFilter :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/character.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/character.sql/1	 Character Types
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/character.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/character.sql/2	 https://www.postgresql.org/docs/current/datatype-character.html
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/datetime.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/datetime.sql/1	 Date/Time Types
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/datetime.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/datetime.sql/2	 https://www.postgresql.org/docs/current/datatype-datetime.html
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/numeric.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/numeric.sql/1	 Numeric Types
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/numeric.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/numeric.sql/2	 https://www.postgresql.org/docs/current/datatype-numeric.html
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/numeric.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/numeric.sql/4	 TODO: this maps incorrectly to int16, not NullInt16
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/numeric.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/numeric.sql/12	 TODO: this maps incorrectly to int16, not NullInt16
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/enums/sql/enum.sql	kyleconroy/sqlc/internal/endtoend/testdata/enums/sql/enum.sql/2	 Valid separators
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/enums/sql/enum.sql	kyleconroy/sqlc/internal/endtoend/testdata/enums/sql/enum.sql/7	 Strip unknown characters
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/identical_tables/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/identical_tables/query.sql/4	 name: IdenticalTable :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/in/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/in/query.sql/3	 name: In :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/inflection/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/inflection/query.sql/3	 name: ListCampus :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/insert_cte/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/insert_cte/query.sql/1	 FILE: schema.sql
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/insert_cte/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/insert_cte/query.sql/30	 FILE: query.sql
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/insert_cte/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/insert_cte/query.sql/32	 name: InsertCode :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/insert_select/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/insert_select/query.sql/4	 name: InsertSelect :exec
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_func_args/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_func_args/query.sql/4	 stderr
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_func_args/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_func_args/query.sql/5	 # package querytest
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_func_args/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_func_args/query.sql/6	 query.sql:1:8: function random(unknown) does not exist
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_func_args/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_func_args/query.sql/7	 query.sql:2:8: function position() does not exist
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_params/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_params/query.sql/3	 name: baz :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_params/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_params/query.sql/6	 name: bar
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_params/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_params/query.sql/9	 name: foo :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_params/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_params/query.sql/12	 name: Named :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_params/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_params/query.sql/15	 stderr
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_params/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_params/query.sql/16	 # package querytest
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_params/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_params/query.sql/17	 query.sql:4:1: could not determine data type of parameter $1
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_params/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_params/query.sql/18	 query.sql:7:1: could not determine data type of parameter $2
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_params/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_params/query.sql/19	 query.sql:10:8: column "foo" does not exist
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_params/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_params/query.sql/20	 query.sql:13:1: query mixes positional parameters ($1) and named parameters (sqlc.arg or @arg)
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_bar/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_bar/query.sql/5	 stderr
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_bar/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_bar/query.sql/6	 # package querytest
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_bar/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_bar/query.sql/7	 query.sql:2:1: INSERT has more target columns than expressions
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_bar/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_bar/query.sql/8	 query.sql:3:1: INSERT has more expressions than target columns
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/3	 name: ListFoos
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/6	 name: ListFoos :one :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/9	 name: ListFoos :two
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/12	 name: DeleteFoo :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/15	 name: UpdateFoo :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/18	 name: InsertFoo :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/21	 stderr
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/22	 # package querytest
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/23	 query.sql:4:1: invalid query comment: -- name: ListFoos
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/24	 query.sql:7:1: invalid query comment: -- name: ListFoos :one :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/25	 query.sql:10:1: invalid query type: :two
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/26	 query.sql:13:1: query "DeleteFoo" specifies parameter ":one" without containing a RETURNING clause
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/27	 query.sql:16:1: query "UpdateFoo" specifies parameter ":one" without containing a RETURNING clause
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/28	 query.sql:19:1: query "InsertFoo" specifies parameter ":one" without containing a RETURNING clause
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/join_alias/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/join_alias/query.sql/4	 name: AliasJoin :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/join_alias/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/join_alias/query.sql/10	 name: AliasExpand :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/join_text_array/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/join_text_array/query.sql/4	 name: JoinTextArray :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/join_where_clause/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/join_where_clause/query.sql/4	 name: JoinWhereClause :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/json/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/json/query.sql/8	 name: SelectFoo :exec
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/limit/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/limit/query.sql/3	 name: Limit :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/lower/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/lower/query.sql/3	 name: Lower :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/lower_switched_order/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/lower_switched_order/query.sql/3	 name: LowerSwitchedOrder :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/macaddr/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/macaddr/query.sql/3	 name: Get :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mathmatical_operator/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mathmatical_operator/query.sql/3	 name: Math :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/missing_semicolon/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/missing_semicolon/query.sql/3	 name: FirstQuery :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/missing_semicolon/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/missing_semicolon/query.sql/6	 name: SecondQuery :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/missing_semicolon/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/missing_semicolon/query.sql/9	 stderr
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/missing_semicolon/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/missing_semicolon/query.sql/10	 # package querytest
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/missing_semicolon/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/missing_semicolon/query.sql/11	 query.sql:7:1: missing semicolon at end of file
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/multifrom/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/multifrom/query.sql/4	 name: MultiFrom :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/1	 name: WrongFunc :one 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/4	 name: InvalidName :one 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/7	 name: InvalidVaue :one 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/10	 name: TooManyFroms :one 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/13	 name: MisspelledSelect :one 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/16	 name: ExtraSelect :one 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/19	 stderr
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/20	 # package querytest
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/21	 query.sql:1:1: invalid function call "sqlc.argh", did you mean "sqlc.arg"?
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/22	 query.sql:4:1: invalid custom argument value "sqlc.arg(sqlc.arg(target_id))"
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/23	 query.sql:7:1: invalid custom argument value "sqlc.arg(?)"
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/24	 query.sql:11:39: syntax error at or near "from"
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/25	 query.sql:14:9: syntax error at or near "selectt"
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/26	 query.sql:17:35: syntax error at or near "select"
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_overrides/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_overrides/query.sql/1	 name: GetCount :one 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_overrides/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_overrides/query.sql/4	 name: GetNameByID :one 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_overrides/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_overrides/query.sql/7	 name: GetAll :many 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_overrides/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_overrides/query.sql/10	 name: GetAllUsersOrders :many 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_overrides/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_overrides/query.sql/14	 name: InsertNewUser :exec 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_overrides/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_overrides/query.sql/17	 name: UpdateAllUsers :exec 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_overrides/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_overrides/query.sql/20	 name: UpdateUserAt :exec 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_overrides/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_overrides/query.sql/23	 name: InsertUsersFromOrders :exec 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_param/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_param/query.sql/1	 name: ListUsersByID :many 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_param/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_param/query.sql/4	 name: ListUserOrders :many 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_param/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_param/query.sql/14	 name: GetUserByID :one 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_param/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_param/query.sql/17	 name: ListUsersByFamily :many 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_param/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_param/query.sql/20	 name: ListUsersWithLimit :many 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_param/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_param/query.sql/23	 name: LimitSQLCArg :many 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_param/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_param/query.sql/26	 name: InsertNewUser :exec 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_parse/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_parse/query.sql/1	 name: GetCount :one 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_parse/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_parse/query.sql/4	 name: GetNameByID :one 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_parse/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_parse/query.sql/7	 name: GetAll :many 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_parse/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_parse/query.sql/10	 name: GetAllUsersOrders :many 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_parse/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_parse/query.sql/14	 name: InsertNewUser :exec 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_parse/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_parse/query.sql/17	 name: UpdateAllUsers :exec 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_parse/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_parse/query.sql/20	 name: UpdateUserAt :exec 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_parse/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_parse/query.sql/23	 name: InsertUsersFromOrders :exec 
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/named_param/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/named_param/query.sql/3	 name: FuncParams :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/named_param/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/named_param/query.sql/6	 name: AtParams :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/named_param/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/named_param/query.sql/9	 name: InsertFuncParams :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/named_param/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/named_param/query.sql/12	 name: InsertAtParams :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/named_param/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/named_param/query.sql/16	 name: Update :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/ondeck/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/ondeck/query.sql/1	 name: ListCityByName :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/ondeck/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/ondeck/query.sql/4	 name: GetCity :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/ondeck/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/ondeck/query.sql/7	 name: CreateCity :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/ondeck/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/ondeck/query.sql/16	 name: UpdateCity :exec
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/ondeck/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/ondeck/query.sql/19	 name: ListVenues :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/ondeck/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/ondeck/query.sql/25	 name: DeleteVenue :exec
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/ondeck/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/ondeck/query.sql/29	 name: GetVenue :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/ondeck/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/ondeck/query.sql/34	 name: CreateVenue :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/ondeck/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/ondeck/query.sql/52	 name: UpdateVenueName :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/ondeck/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/ondeck/query.sql/58	 name: VenueCountByCity :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/pg_advisory_xact_lock/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/pg_advisory_xact_lock/query.sql/1	 name: AdvisoryLock :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/pg_user_table/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/pg_user_table/query.sql/3	 name: User :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/schema_scoped_create/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/schema_scoped_create/query.sql/4	 name: SchemaScopedCreate :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/schema_scoped_delete/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/schema_scoped_delete/query.sql/4	 name: SchemaScopedDelete :exec
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/schema_scoped_enum/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/schema_scoped_enum/query.sql/9	 name: ListUsersByRole :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/schema_scoped_filter/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/schema_scoped_filter/query.sql/4	 name: SchemaScopedFilter :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/schema_scoped_list/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/schema_scoped_list/query.sql/4	 name: SchemaScopedList :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/schema_scoped_update/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/schema_scoped_update/query.sql/4	 name: SchemaScopedUpdate :exec
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/select_column_cast/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/select_column_cast/query.sql/3	 name: SelectColumnCast :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/select_exists/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/select_exists/query.sql/3	 name: BarExists :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/select_text_array/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/select_text_array/query.sql/1	 name: SelectTextArray :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/star/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/star/query.sql/4	 name: Star :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/star_expansion/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/star_expansion/query.sql/3	 name: StarExpansion :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/star_expansion_cte/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/star_expansion_cte/query.sql/4	 name: StarExpansionCTE :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/star_expansion_cte/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/star_expansion_cte/query.sql/7	 name: StarExpansionTwoCTE :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/star_expansion_from_cte/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/star_expansion_from_cte/query.sql/3	 name: StarExpansionCTE :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/star_expansion_join/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/star_expansion_join/query.sql/3	 name: StarExpansionJoin :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/star_expansion_reserved/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/star_expansion_reserved/query.sql/2	 name: StarExpansionReserved :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/star_expansion_subquery/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/star_expansion_subquery/query.sql/3	 name: StarExpansionSubquery :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/table_name/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/table_name/query.sql/4	 name: TableName :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/text_array/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/text_array/query.sql/3	 name: TextArray :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/truncate/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/truncate/query.sql/3	 name: Truncate :exec
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/two_joins/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/two_joins/query.sql/5	 name: TwoJoins :many
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/unknown_func/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/unknown_func/query.sql/2	 name: ListFoos :one
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/update_set/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/update_set/query.sql/3	 name: UpdateSet :exec
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/update_set_multiple/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/update_set_multiple/query.sql/3	 name: UpdateSetMultiple :exec
+EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/1	 name: GetAuthor :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/5	 name: ListAuthors :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/9	 name: CreateAuthor :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/17	 name: DeleteAuthor :exec	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/1	 name: GetAuthor :one 	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/5	 name: GetBook :one 	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/9	 name: DeleteBook :exec 	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/13	 name: BooksByTitleYear :many 	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/17	 name: CreateAuthor :exec 	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/20	 name: CreateBook :exec 	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/38	 name: UpdateBook :exec 	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/43	 name: UpdateBookISBN :exec 	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/48	 name: DeleteAuthorBeforeYear :exec 	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/schema.sql	kyleconroy/sqlc/examples/booktest/mysql/schema.sql/4	 DROP FUNCTION IF EXISTS say_hello;	Code
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/schema.sql	kyleconroy/sqlc/examples/booktest/mysql/schema.sql/23	 CONSTRAINT FOREIGN KEY (author_id) REFERENCES authors(author_id)	Code
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/schema.sql	kyleconroy/sqlc/examples/booktest/mysql/schema.sql/28	\nCREATE FUNCTION say_hello(s text) RETURNS text\n  DETERMINISTIC\n  RETURN CONCAT('hello ', s);\n	Code
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/1	 name: GetAuthor :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/5	 name: GetBook :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/9	 name: DeleteBook :exec	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/13	 name: BooksByTitleYear :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/17	 name: BooksByTags :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/28	 name: CreateAuthor :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/32	 name: CreateBook :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/52	 name: UpdateBook :exec	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/57	 name: UpdateBookISBN :exec	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/jets/query-building.sql	kyleconroy/sqlc/examples/jets/query-building.sql/1	 name: CountPilots :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/jets/query-building.sql	kyleconroy/sqlc/examples/jets/query-building.sql/4	 name: ListPilots :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/jets/query-building.sql	kyleconroy/sqlc/examples/jets/query-building.sql/7	 name: DeletePilot :exec	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/jets/schema.sql	kyleconroy/sqlc/examples/jets/schema.sql/26	 Join table	Notice
+EN	SQL	kyleconroy/sqlc	examples/jets/schema.sql	kyleconroy/sqlc/examples/jets/schema.sql/32	 Composite primary key	Notice
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/1	 name: GetAuthor :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/5	 name: ListAuthors :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/9	 name: CreateAuthor :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/17	 name: DeleteAuthor :exec	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/1	 name: GetAuthor :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/5	 name: GetBook :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/9	 name: DeleteBook :exec	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/13	 name: BooksByTitleYear :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/17	 name: BooksByTags :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/28	 name: CreateAuthor :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/32	 name: CreateBook :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/52	 name: UpdateBook :exec	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/57	 name: UpdateBookISBN :exec	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/query-building.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/query-building.sql/1	 name: CountPilots :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/query-building.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/query-building.sql/4	 name: ListPilots :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/query-building.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/query-building.sql/7	 name: DeletePilot :exec	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/schema.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/schema.sql/26	 Join table	Notice
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/schema.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/schema.sql/32	 Composite primary key	Notice
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/1	 name: ListCities :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/6	 name: GetCity :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/11	 name: CreateCity :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/12	 Create a new city. The slug must be unique.	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/ondeck/query/city.sql	kyleconroy/sqlc/examples/ondeck/query/city.sql/12	 Create a new city. The slug must be unique.	Functional-Inline
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/1	 Comparison Functions and Operators	Functional-Module
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/2	 https://www.postgresql.org/docs/current/functions-comparison.html	Notice
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/6	 name: GreaterThan :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/9	 name: LessThan :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/12	 name: GreaterThanOrEqual :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/15	 name: LessThanOrEqual :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/18	 name: NotEqual :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/21	 name: AlsoNotEqual :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/24	 name: Equal :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/composite_type/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/composite_type/query.sql/18	 name: ListPaths :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/character.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/character.sql/1	 Character Types	Functional-Module
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/character.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/character.sql/2	 https://www.postgresql.org/docs/current/datatype-character.html	Notice
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/datetime.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/datetime.sql/1	 Date/Time Types	Functional-Module
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/datetime.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/datetime.sql/2	 https://www.postgresql.org/docs/current/datatype-datetime.html	Notice
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/numeric.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/numeric.sql/1	 Numeric Types	Functional-Module
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/numeric.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/numeric.sql/2	 https://www.postgresql.org/docs/current/datatype-numeric.html	Notice
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/numeric.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/numeric.sql/4	 TODO: this maps incorrectly to int16, not NullInt16	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/numeric.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/numeric.sql/12	 TODO: this maps incorrectly to int16, not NullInt16	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/enums/sql/enum.sql	kyleconroy/sqlc/internal/endtoend/testdata/enums/sql/enum.sql/2	 Valid separators	Notice
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/enums/sql/enum.sql	kyleconroy/sqlc/internal/endtoend/testdata/enums/sql/enum.sql/7	 Strip unknown characters	Notice
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_func_args/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_func_args/query.sql/4	 stderr	Code
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_func_args/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_func_args/query.sql/6	 query.sql:1:8: function random(unknown) does not exist	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_func_args/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_func_args/query.sql/7	 query.sql:2:8: function position() does not exist	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_params/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_params/query.sql/15	 stderr	Code
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_params/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_params/query.sql/17	 query.sql:4:1: could not determine data type of parameter $1	ToDO
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_params/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_params/query.sql/18	 query.sql:7:1: could not determine data type of parameter $2	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_params/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_params/query.sql/19	 query.sql:10:8: column "foo" does not exist	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_params/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_params/query.sql/20	 query.sql:13:1: query mixes positional parameters ($1) and named parameters (sqlc.arg or @arg)	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_bar/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_bar/query.sql/7	 query.sql:2:1: INSERT has more target columns than expressions	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_bar/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_bar/query.sql/8	 query.sql:3:1: INSERT has more expressions than target columns	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/23	 query.sql:4:1: invalid query comment: -- name: ListFoos	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/24	 query.sql:7:1: invalid query comment: -- name: ListFoos :one :many	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/25	 query.sql:10:1: invalid query type: :two	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/26	 query.sql:13:1: query "DeleteFoo" specifies parameter ":one" without containing a RETURNING clause	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/27	 query.sql:16:1: query "UpdateFoo" specifies parameter ":one" without containing a RETURNING clause	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/invalid_queries_foo/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/invalid_queries_foo/query.sql/28	 query.sql:19:1: query "InsertFoo" specifies parameter ":one" without containing a RETURNING clause	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/missing_semicolon/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/missing_semicolon/query.sql/11	 query.sql:7:1: missing semicolon at end of file	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/21	 query.sql:1:1: invalid function call "sqlc.argh", did you mean "sqlc.arg"?	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/22	 query.sql:4:1: invalid custom argument value "sqlc.arg(sqlc.arg(target_id))"	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/23	 query.sql:7:1: invalid custom argument value "sqlc.arg(?)"	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/24	 query.sql:11:39: syntax error at or near "from"	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/25	 query.sql:14:9: syntax error at or near "selectt"	ToDo
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/mysql_errors/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/mysql_errors/query.sql/26	 query.sql:17:35: syntax error at or near "select"	ToDo
