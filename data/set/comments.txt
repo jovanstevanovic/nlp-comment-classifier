@@ -395,69 +395,69 @@ EN	SQL	alibaba/AliSQL	storage/ndb/test/crund/tws/schema.sql	alibaba/AliSQL/stora
 EN	SQL	alibaba/AliSQL	storage/ndb/test/crund/tws/schema.sql	alibaba/AliSQL/storage/ndb/test/crund/tws/schema.sql/45	        UNIQUE INDEX c7_UNIQUE (c7 ASC),	Code
 EN	SQL	alibaba/AliSQL	storage/ndb/test/crund/tws/schema.sql	alibaba/AliSQL/storage/ndb/test/crund/tws/schema.sql/46	        UNIQUE INDEX c8_UNIQUE (c8 ASC)	Code
 EN	SQL	alibaba/AliSQL	storage/ndb/tools/ndb_dist_priv.sql	alibaba/AliSQL/storage/ndb/tools/ndb_dist_priv.sql/1	 Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.\n\n This program is free software; you can redistribute it and/or modify\n it under the terms of the GNU General Public License as published by\n the Free Software Foundation; version 2 of the License.\n\n This program is distributed in the hope that it will be useful,\n but WITHOUT ANY WARRANTY; without even the implied warranty of\n MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n GNU General Public License for more details.\n\n You should have received a copy of the GNU General Public License\n along with this program; if not, write to the Free Software\n Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA	General
-EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/1	 name: GetAuthor :one	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/5	 name: ListAuthors :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/9	 name: CreateAuthor :one	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/17	 name: DeleteAuthor :exec	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/1	 name: GetAuthor :one 	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/5	 name: GetBook :one 	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/9	 name: DeleteBook :exec 	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/13	 name: BooksByTitleYear :many 	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/17	 name: CreateAuthor :exec 	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/20	 name: CreateBook :exec 	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/38	 name: UpdateBook :exec 	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/43	 name: UpdateBookISBN :exec 	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/48	 name: DeleteAuthorBeforeYear :exec 	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/1	 name: GetAuthor :one	IDE
+EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/5	 name: ListAuthors :many	IDE
+EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/9	 name: CreateAuthor :one	IDE
+EN	SQL	kyleconroy/sqlc	examples/authors/query.sql	kyleconroy/sqlc/examples/authors/query.sql/17	 name: DeleteAuthor :exec	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/1	 name: GetAuthor :one 	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/5	 name: GetBook :one 	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/9	 name: DeleteBook :exec 	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/13	 name: BooksByTitleYear :many 	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/17	 name: CreateAuthor :exec 	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/20	 name: CreateBook :exec 	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/38	 name: UpdateBook :exec 	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/43	 name: UpdateBookISBN :exec 	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/query.sql	kyleconroy/sqlc/examples/booktest/mysql/query.sql/48	 name: DeleteAuthorBeforeYear :exec 	IDE
 EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/schema.sql	kyleconroy/sqlc/examples/booktest/mysql/schema.sql/4	 DROP FUNCTION IF EXISTS say_hello;	Code
 EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/schema.sql	kyleconroy/sqlc/examples/booktest/mysql/schema.sql/23	 CONSTRAINT FOREIGN KEY (author_id) REFERENCES authors(author_id)	Code
 EN	SQL	kyleconroy/sqlc	examples/booktest/mysql/schema.sql	kyleconroy/sqlc/examples/booktest/mysql/schema.sql/28	\nCREATE FUNCTION say_hello(s text) RETURNS text\n  DETERMINISTIC\n  RETURN CONCAT('hello ', s);\n	Code
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/1	 name: GetAuthor :one	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/5	 name: GetBook :one	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/9	 name: DeleteBook :exec	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/13	 name: BooksByTitleYear :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/17	 name: BooksByTags :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/28	 name: CreateAuthor :one	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/32	 name: CreateBook :one	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/52	 name: UpdateBook :exec	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/57	 name: UpdateBookISBN :exec	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/jets/query-building.sql	kyleconroy/sqlc/examples/jets/query-building.sql/1	 name: CountPilots :one	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/jets/query-building.sql	kyleconroy/sqlc/examples/jets/query-building.sql/4	 name: ListPilots :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/jets/query-building.sql	kyleconroy/sqlc/examples/jets/query-building.sql/7	 name: DeletePilot :exec	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/1	 name: GetAuthor :one	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/5	 name: GetBook :one	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/9	 name: DeleteBook :exec	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/13	 name: BooksByTitleYear :many	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/17	 name: BooksByTags :many	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/28	 name: CreateAuthor :one	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/32	 name: CreateBook :one	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/52	 name: UpdateBook :exec	IDE
+EN	SQL	kyleconroy/sqlc	examples/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/booktest/postgresql/query.sql/57	 name: UpdateBookISBN :exec	IDE
+EN	SQL	kyleconroy/sqlc	examples/jets/query-building.sql	kyleconroy/sqlc/examples/jets/query-building.sql/1	 name: CountPilots :one	IDE
+EN	SQL	kyleconroy/sqlc	examples/jets/query-building.sql	kyleconroy/sqlc/examples/jets/query-building.sql/4	 name: ListPilots :many	IDE
+EN	SQL	kyleconroy/sqlc	examples/jets/query-building.sql	kyleconroy/sqlc/examples/jets/query-building.sql/7	 name: DeletePilot :exec	IDE
 EN	SQL	kyleconroy/sqlc	examples/jets/schema.sql	kyleconroy/sqlc/examples/jets/schema.sql/26	 Join table	Notice
 EN	SQL	kyleconroy/sqlc	examples/jets/schema.sql	kyleconroy/sqlc/examples/jets/schema.sql/32	 Composite primary key	Notice
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/1	 name: GetAuthor :one	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/5	 name: ListAuthors :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/9	 name: CreateAuthor :one	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/17	 name: DeleteAuthor :exec	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/1	 name: GetAuthor :one	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/5	 name: GetBook :one	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/9	 name: DeleteBook :exec	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/13	 name: BooksByTitleYear :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/17	 name: BooksByTags :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/28	 name: CreateAuthor :one	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/32	 name: CreateBook :one	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/52	 name: UpdateBook :exec	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/57	 name: UpdateBookISBN :exec	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/query-building.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/query-building.sql/1	 name: CountPilots :one	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/query-building.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/query-building.sql/4	 name: ListPilots :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/query-building.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/query-building.sql/7	 name: DeletePilot :exec	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/1	 name: GetAuthor :one	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/5	 name: ListAuthors :many	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/9	 name: CreateAuthor :one	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/authors/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/authors/query.sql/17	 name: DeleteAuthor :exec	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/1	 name: GetAuthor :one	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/5	 name: GetBook :one	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/9	 name: DeleteBook :exec	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/13	 name: BooksByTitleYear :many	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/17	 name: BooksByTags :many	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/28	 name: CreateAuthor :one	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/32	 name: CreateBook :one	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/52	 name: UpdateBook :exec	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/booktest/postgresql/query.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/booktest/postgresql/query.sql/57	 name: UpdateBookISBN :exec	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/query-building.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/query-building.sql/1	 name: CountPilots :one	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/query-building.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/query-building.sql/4	 name: ListPilots :many	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/query-building.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/query-building.sql/7	 name: DeletePilot :exec	IDE
 EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/schema.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/schema.sql/26	 Join table	Notice
 EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/jets/schema.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/jets/schema.sql/32	 Composite primary key	Notice
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/1	 name: ListCities :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/6	 name: GetCity :one	Functional-Inline
-EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/11	 name: CreateCity :one	Functional-Inline
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/1	 name: ListCities :many	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/6	 name: GetCity :one	IDE
+EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/11	 name: CreateCity :one	IDE
 EN	SQL	kyleconroy/sqlc	examples/kotlin/src/main/resources/ondeck/query/city.sql	kyleconroy/sqlc/examples/kotlin/src/main/resources/ondeck/query/city.sql/12	 Create a new city. The slug must be unique.	Functional-Inline
 EN	SQL	kyleconroy/sqlc	examples/ondeck/query/city.sql	kyleconroy/sqlc/examples/ondeck/query/city.sql/12	 Create a new city. The slug must be unique.	Functional-Inline
 EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/1	 Comparison Functions and Operators	Functional-Module
 EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/2	 https://www.postgresql.org/docs/current/functions-comparison.html	Notice
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/6	 name: GreaterThan :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/9	 name: LessThan :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/12	 name: GreaterThanOrEqual :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/15	 name: LessThanOrEqual :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/18	 name: NotEqual :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/21	 name: AlsoNotEqual :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/24	 name: Equal :many	Functional-Inline
-EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/composite_type/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/composite_type/query.sql/18	 name: ListPaths :many	Functional-Inline
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/6	 name: GreaterThan :many	IDE
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/9	 name: LessThan :many	IDE
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/12	 name: GreaterThanOrEqual :many	IDE
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/15	 name: LessThanOrEqual :many	IDE
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/18	 name: NotEqual :many	IDE
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/21	 name: AlsoNotEqual :many	IDE
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/comparisons/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/comparisons/query.sql/24	 name: Equal :many	IDE
+EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/composite_type/query.sql	kyleconroy/sqlc/internal/endtoend/testdata/composite_type/query.sql/18	 name: ListPaths :many	IDE
 EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/character.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/character.sql/1	 Character Types	Functional-Module
 EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/character.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/character.sql/2	 https://www.postgresql.org/docs/current/datatype-character.html	Notice
 EN	SQL	kyleconroy/sqlc	internal/endtoend/testdata/datatype/sql/datetime.sql	kyleconroy/sqlc/internal/endtoend/testdata/datatype/sql/datetime.sql/1	 Date/Time Types	Functional-Module
@@ -1127,3 +1127,10 @@ EN	SQL	XD-DENG/SQL-exercise	SQL_exercise_10/10_build_schema.sql	XD-DENG/SQL-exer
 EN	SQL	XD-DENG/SQL-exercise	SQL_exercise_10/10_questions_and_solutions.sql	XD-DENG/SQL-exercise/SQL_exercise_10/10_questions_and_solutions.sql/1	 Used SQLite3 for this example  Notice
 EN	SQL	XD-DENG/SQL-exercise	SQL_exercise_10/10_questions_and_solutions.sql	XD-DENG/SQL-exercise/SQL_exercise_10/10_questions_and_solutions.sql/3	 10.1 Join table PEOPLE and ADDRESS, but keep only one address information for each person (we don't mind which record we take for each person). \n i.e., the joined table should have the same number of rows as table PEOPLE  Functiona-Inline
 EN	SQL	XD-DENG/SQL-exercise	SQL_exercise_10/10_questions_and_solutions.sql	XD-DENG/SQL-exercise/SQL_exercise_10/10_questions_and_solutions.sql/20	 10.2 Join table PEOPLE and ADDRESS, but ONLY keep the LATEST address information for each person. \n i.e., the joined table should have the same number of rows as table PEOPLE    Functional-Inline
+EN	SQL	confluentinc/ksql	ksqldb-examples/src/main/resources/SampleQueries.sql	confluentinc/ksql/ksqldb-examples/src/main/resources/SampleQueries.sql/9	 Enrich the pageview stream Functional-Inline
+EN	SQL	confluentinc/ksql	ksqldb-examples/src/main/resources/SampleQueries.sql	confluentinc/ksql/ksqldb-examples/src/main/resources/SampleQueries.sql/12	 Find all the pageviews by female users Functional-Inline
+EN	SQL	confluentinc/ksql	ksqldb-examples/src/main/resources/SampleQueries.sql	confluentinc/ksql/ksqldb-examples/src/main/resources/SampleQueries.sql/15	 Find the pageviews from reagion with id ending in _8 and _9 from the female pageview Functional-Inline
+EN	SQL	confluentinc/ksql	ksqldb-examples/src/main/resources/SampleQueries.sql	confluentinc/ksql/ksqldb-examples/src/main/resources/SampleQueries.sql/18	 Number of views for each page for tumbling window of 5 seconds Functional-Inline
+EN	SQL	confluentinc/ksql	ksqldb-examples/src/main/resources/SampleQueries.sql	confluentinc/ksql/ksqldb-examples/src/main/resources/SampleQueries.sql/21	 Number of views for each page for tumbling window of 5 minutes Functional-Inline
+EN	SQL	confluentinc/ksql	ksqldb-examples/src/main/resources/SampleQueries.sql	confluentinc/ksql/ksqldb-examples/src/main/resources/SampleQueries.sql/25	 Number of views for each each reagion and gender combination for tumbling window of 15 seconds\n when the view count is greater than 5 Functional-Inline
+EN	SQL	confluentinc/ksql	ksqldb-functional-tests/src/test/resources/test-runner/test4/statements.sql	confluentinc/ksql/ksqldb-functional-tests/src/test/resources/test-runner/test4/statements.sql/1	 This test is courtesy of Michael Drogalis (https://gist.github.com/MichaelDrogalis)	Notice
