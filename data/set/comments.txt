@@ -1134,3 +1134,27 @@ EN	SQL	confluentinc/ksql	ksqldb-examples/src/main/resources/SampleQueries.sql	co
 EN	SQL	confluentinc/ksql	ksqldb-examples/src/main/resources/SampleQueries.sql	confluentinc/ksql/ksqldb-examples/src/main/resources/SampleQueries.sql/21	 Number of views for each page for tumbling window of 5 minutes Functional-Inline
 EN	SQL	confluentinc/ksql	ksqldb-examples/src/main/resources/SampleQueries.sql	confluentinc/ksql/ksqldb-examples/src/main/resources/SampleQueries.sql/25	 Number of views for each each reagion and gender combination for tumbling window of 15 seconds\n when the view count is greater than 5 Functional-Inline
 EN	SQL	confluentinc/ksql	ksqldb-functional-tests/src/test/resources/test-runner/test4/statements.sql	confluentinc/ksql/ksqldb-functional-tests/src/test/resources/test-runner/test4/statements.sql/1	 This test is courtesy of Michael Drogalis (https://gist.github.com/MichaelDrogalis)	Notice
+EN	SQL	hyrise/sql-parser	hyrise/web-interface/sample-queries.sql	hyrise/sql-parser/hyrise/web-interface/sample-queries.sql/1	 Load Tables	Functiona-Inline
+EN	SQL	hyrise/sql-parser	test/queries/queries-bad.sql	hyrise/sql-parser/test/queries/queries-bad.sql/1	 This file contains a list of strings that are NOT valid SQL queries.	Functional-Module
+EN	SQL	hyrise/sql-parser	test/queries/queries-bad.sql	hyrise/sql-parser/test/queries/queries-bad.sql/2	 Each line contains a single SQL query.	Notice
+EN	SQL	hyrise/sql-parser	test/queries/queries-bad.sql	hyrise/sql-parser/test/queries/queries-bad.sql/3	 Each line starts with a '!' char to indicate that parsing should fail.	Notice
+EN	SQL	hyrise/sql-parser	test/queries/queries-bad.sql	hyrise/sql-parser/test/queries/queries-bad.sql/20	 We do not support nested WITH clauses	Notice
+EN	SQL	hyrise/sql-parser	test/queries/queries-bad.sql	hyrise/sql-parser/test/queries/queries-bad.sql/21	 Missing comma between WITH descriptions	Notice
+EN	SQL	hyrise/sql-parser	test/queries/queries-bad.sql	hyrise/sql-parser/test/queries/queries-bad.sql/22	 Transaction naming is currently not supported	Notice
+EN	SQL	hyrise/sql-parser	test/queries/queries-good.sql	hyrise/sql-parser/test/queries/queries-good.sql/1	 This file contains a list of strings that are NOT valid SQL queries.	Functional-Module
+EN	SQL	hyrise/sql-parser	test/queries/queries-good.sql	hyrise/sql-parser/test/queries/queries-good.sql/2	 Each line contains a single SQL query.	Notice
+EN	SQL	hyrise/sql-parser	test/queries/tpc-h-01.sql	hyrise/sql-parser/test/queries/tpc-h-01.sql/1	 http://www.sqlserver-dba.com/2011/09/this-is-a-followup-on-my-earlier-post-of-sql-server-test-data-generation-testing-tools-i-had-some-requests-for-my-set-up-pr.html	Notice
+EN	SQL	hyrise/sql-parser	test/queries/tpc-h-11.sql	hyrise/sql-parser/test/queries/tpc-h-11.sql/2	 TPC_H Query 11 - Important Stock Identification	Functiona-Inline
+EN	SQL	hyrise/sql-parser	test/queries/tpc-h-12.sql	hyrise/sql-parser/test/queries/tpc-h-12.sql/1	 TPC_H Query 12 - Shipping Modes and Order Priority	Functiona-Inline
+EN	SQL	hyrise/sql-parser	test/queries/tpc-h-13.sql	hyrise/sql-parser/test/queries/tpc-h-13.sql/1	 TPC_H Query 13 - Customer Distribution	Functiona-Inline
+EN	SQL	hyrise/sql-parser	test/queries/tpc-h-14.sql	hyrise/sql-parser/test/queries/tpc-h-14.sql/1	 TPC_H Query 14 - Promotion Effect	Functiona-Inline
+EN	SQL	hyrise/sql-parser	test/queries/tpc-h-15.sql	hyrise/sql-parser/test/queries/tpc-h-15.sql/1	 TPC_H Query 15.1 - Create View for Top Supplier Query	Functiona-Inline
+EN	SQL	hyrise/sql-parser	test/queries/tpc-h-15.sql	hyrise/sql-parser/test/queries/tpc-h-15.sql/8	 TPC_H Query 15.2 - Top Supplier	Functiona-Inline
+EN	SQL	hyrise/sql-parser	test/queries/tpc-h-15.sql	hyrise/sql-parser/test/queries/tpc-h-15.sql/14	 TPC_H Query 15.3 - Drop View	Functiona-Inline
+EN	SQL	hyrise/sql-parser	test/queries/tpc-h-16.sql	hyrise/sql-parser/test/queries/tpc-h-16.sql/2	 TPC_H Query 16 - Parts/Supplier Relationship	Functiona-Inline
+EN	SQL	hyrise/sql-parser	test/queries/tpc-h-17.sql	hyrise/sql-parser/test/queries/tpc-h-17.sql/1	 TPC_H Query 17 - Small-Quantity-Order Revenue	Functiona-Inline
+EN	SQL	hyrise/sql-parser	test/queries/tpc-h-18.sql	hyrise/sql-parser/test/queries/tpc-h-18.sql/1	 TPC_H Query 18 - Large Volume Customer	Functiona-Inline
+EN	SQL	hyrise/sql-parser	test/queries/tpc-h-19.sql	hyrise/sql-parser/test/queries/tpc-h-19.sql/1	 TPC_H Query 19 - Discounted Revenue	Functiona-Inline
+EN	SQL	hyrise/sql-parser	test/queries/tpc-h-20.sql	hyrise/sql-parser/test/queries/tpc-h-20.sql/1	 TPC_H Query 20 - Potential Part Promotion	Functiona-Inline
+EN	SQL	hyrise/sql-parser	test/queries/tpc-h-21.sql	hyrise/sql-parser/test/queries/tpc-h-21.sql/1	 TPC_H Query 21 - Suppliers Who Kept Orders Waiting	Functiona-Inline
+EN	SQL	hyrise/sql-parser	test/queries/tpc-h-22.sql	hyrise/sql-parser/test/queries/tpc-h-22.sql/1	 TPC_H Query 22 - Global Sales Opportunity */	Functiona-Inline
