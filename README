@@ -1,2 +1,9 @@
-# nlp-comment-classifier
-College team project
+# SQL Comment Classifier
+
+This project involves the development of a model that classifies SQL code comments into distinct categories, including
+ToDo, Code, Functional, General, and more.
+
+The project introduces a multifaceted classification system, ensuring that each comment type receives appropriate
+categorization. Comments were categorized as ToDo for future tasks, Code for explanatory notes, Functional for
+descriptions of code functionality, General for non-specific commentary, and additional categories to encompass various
+contexts.
